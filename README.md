@@ -1,122 +1,164 @@
-# Privacy Policy — MoodFlow
+# MoodFlow — Privacy Policy
 
-**Company:** SudarshanTechLabs
-**Location:** Bangkok, Bangkok, Thailand
-**Contact:** sudarshantechlabs@gmail.com
 **Effective Date:** 2026-03-21
 **Last Updated:** 2026-03-21
+**Version:** 1.0.0
+
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-## 1. Introduction
-
-SudarshanTechLabs ("we", "our", or "us") operates the MoodFlow mobile application (the "App"). This Privacy Policy explains how we collect, use, and protect your information when you use MoodFlow.
-
-By using the App, you agree to the terms of this Privacy Policy.
+MoodFlow is a mood tracking and mental wellness app for Android. It helps you log daily moods, identify patterns through charts, and optionally receive AI-powered insights via Google Gemini. Mood data is stored locally on your device. The App uses Firebase for analytics and crash reporting.
 
 ---
 
-## 2. Data We Collect
+## Data Collection
 
-### 2.1 Data You Provide
-- **Mood entries:** Mood ratings, emoji selections, and timestamps you log in the App
-- **Journal notes:** Text you write in the journaling feature
-- **Mood tags and triggers:** Labels you attach to mood entries
+### Data Stored Locally on Your Device
 
-### 2.2 Data Collected Automatically
-- **Crash reports:** Anonymous crash logs collected via Firebase Crashlytics to help us fix bugs
-- **Usage analytics:** Anonymous app usage events (screens visited, features used) via Firebase Analytics. No personally identifiable information is included.
-
-### 2.3 Data We Do NOT Collect
-- We do **not** collect your name, email address, or any account credentials
-- We do **not** collect location data
-- We do **not** access your contacts, camera, or microphone
-- We do **not** sell or rent your data to any third party
-
----
-
-## 3. How We Use Your Data
-
-| Data Type | Purpose |
-|---|---|
-| Mood entries & journal notes | Stored locally on your device only; used to power in-app insights and statistics |
-| AI insight requests | Sent to Google Gemini API anonymously to generate mood insights (no personal identifiers included) |
-| Crash reports | Used by SudarshanTechLabs to identify and fix App bugs |
-| Usage analytics | Used to understand which features are most useful and improve the App |
-
----
-
-## 4. Local Storage
-
-All mood entries, journal notes, and personal data are stored **locally on your device** using encrypted storage. This data is **never uploaded to our servers**.
-
-If you uninstall the App, all locally stored data is permanently deleted.
-
----
-
-## 5. Third-Party Services
-
-MoodFlow uses the following third-party services, each governed by their own privacy policy:
-
-| Service | Purpose | Privacy Policy |
+| Data | Purpose | Storage |
 |---|---|---|
-| Google Gemini API | AI-powered mood insights | https://ai.google.dev/terms |
-| Firebase Crashlytics | Crash reporting | https://firebase.google.com/support/privacy |
-| Firebase Analytics | Anonymous usage analytics | https://firebase.google.com/support/privacy |
-| Google Play Billing | In-app purchases | https://play.google.com/about/play-terms |
+| Mood entries (mood rating, notes, date, time) | Core mood tracking | Room database (encrypted) |
+| Mood tags and categories | Entry organisation | Room database (encrypted) |
+| App preferences and notification settings | Personalisation | DataStore on your device |
+| PDF mood reports | Data export | App private storage |
 
-Anonymous data sent to Google Gemini for AI processing does not include your name, device ID, or any personally identifiable information.
+### Data Collected by Third-Party Services
 
----
+**Firebase Analytics:**
+- App usage events (e.g., mood logged, screen views, feature used)
+- Device model, OS version, app version, language
+- Session duration and navigation paths
+- No mood content or personal notes are included
 
-## 6. In-App Purchases
+**Firebase Crashlytics:**
+- Device model, OS version, app version
+- Crash stack traces
+- No mood data or personal information is included
 
-MoodFlow offers optional premium features via Google Play Billing. All payment processing is handled exclusively by Google Play. SudarshanTechLabs does not collect or store any payment card information.
+**Google Gemini API (user-initiated only):**
+When you request AI mood insights, anonymised mood pattern data (ratings and dates, no personal notes) is sent to the Gemini API. Sudarshan Tech Labs does not retain this data.
 
----
-
-## 7. Data Retention
-
-- **Local data:** Retained on your device until you delete it within the App or uninstall the App
-- **Crash reports:** Retained by Firebase Crashlytics for up to 90 days
-- **Analytics data:** Retained by Firebase Analytics per Google's standard retention policy
-
----
-
-## 8. Children's Privacy
-
-MoodFlow is not directed at children under the age of 13. We do not knowingly collect any personal information from children. If you believe a child has provided us with personal information, please contact us at sudarshantechlabs@gmail.com and we will take steps to delete such information.
+**Google Play Billing:**
+In-app purchases for premium features are processed by Google Play. Sudarshan Tech Labs does not receive or store payment information.
 
 ---
 
-## 9. Data Security
+## How We Use Your Data
 
-We take reasonable measures to protect your data:
-- All local data is encrypted using Android's security libraries
-- Data transmitted to third-party services (AI insights, crash reports) uses HTTPS encryption
-- We do not operate servers that store your personal data
-
----
-
-## 10. Your Rights
-
-Depending on your location, you may have rights regarding your personal data, including:
-- **Access:** You can view all your mood data directly within the App
-- **Deletion:** You can delete individual entries or all data within the App settings
-- **Portability:** You can export your mood data as a PDF report from within the App
+| Purpose | Data Used |
+|---|---|
+| Log and display mood entries | Local encrypted mood data |
+| Show mood trends and charts | Local mood history |
+| Send mood reminder notifications | Local WorkManager schedules |
+| Generate AI mood insights (on request) | Mood ratings sent to Gemini API |
+| Export mood data to PDF | Local data (iText7, on-device) |
+| Improve app quality | Firebase Analytics (aggregated) |
+| Fix crashes | Firebase Crashlytics |
 
 ---
 
-## 11. Changes to This Policy
+## Data Storage and Security
 
-We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated policy.
+- **Mood data:** Stored in an encrypted Room database (security-crypto)
+- **No Sudarshan Tech Labs cloud storage:** We operate no backend server
+- **Firebase:** Google's infrastructure with encryption in transit and at rest
+- **Android sandbox:** Protected by Android's application isolation
+
+## Data Retention
+
+| Data | Retention |
+|---|---|
+| Local mood data | Until you delete it or uninstall the App |
+| Firebase Analytics | Aggregated, 14 months (Firebase default) |
+| Firebase Crashlytics | 90 days (Firebase default) |
 
 ---
 
-## 12. Contact Us
+## Data Sharing
 
-If you have any questions or concerns about this Privacy Policy, please contact:
+We do not sell your mood data. Data is shared only with:
 
-**SudarshanTechLabs**
-Bangkok, Bangkok, Thailand
-Email: sudarshantechlabs@gmail.com
+- **Google (Firebase Analytics, Crashlytics, Gemini, Play Billing):** https://policies.google.com/privacy
+
+---
+
+## Permissions Explained
+
+| Permission | Why It Is Needed |
+|---|---|
+| `INTERNET` | Required for Firebase, Gemini API, and Google Play Billing |
+| `POST_NOTIFICATIONS` | Send daily mood reminder notifications |
+
+---
+
+## Your Rights and Controls
+
+- **Delete individual mood entries:** Use the delete function in the App
+- **Delete all data:** Uninstall or go to Android Settings > Apps > MoodFlow > Storage > Clear Data
+- **Disable AI insights:** Turn off the feature in App Settings
+
+---
+
+## Children's Privacy
+
+MoodFlow is not directed at children under 13. We do not knowingly collect personal information from children.
+
+---
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+
+- In-app notification
+- Updated policy date on this page
+
+Continued use of MoodFlow after changes become effective constitutes your acceptance of the updated policy.
+
+---
+
+## Contact Us
+
+For privacy questions, data access requests, or account deletion:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## GDPR Rights (EU Users)
+
+If you are in the European Economic Area, you have the right to:
+
+- **Access** — Request a copy of your personal data
+- **Rectification** — Correct inaccurate data
+- **Erasure** — Request deletion of your data
+- **Restrict Processing** — Limit how we use your data
+- **Data Portability** — Receive your data in a portable format
+- **Object** — Object to certain types of processing
+
+To exercise these rights, contact us at the details above.
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Mood data | Local only (encrypted) | No | App functionality |
+| App interactions | Yes (Firebase Analytics) | No | Analytics |
+| Crash logs | Yes (Crashlytics) | No | App stability |
+| Mood ratings (Gemini) | On request | Google (Gemini) | AI insights |
+
+---
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-03-21
