@@ -1,382 +1,216 @@
 # MoodFlow Privacy Policy
 
-**Last Updated**: January 13, 2025
+**Effective Date:** May 17, 2026
+_Last updated: May 17, 2026_
+**Version:** 1.1.0
 
-**Effective Date**: January 13, 2025
+MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.
 
----
+## Information We Collect
 
-## 1. Introduction
+### Location Data
+- MoodFlow does not collect location data.
 
-Welcome to **MoodFlow** ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you use the MoodFlow Android application.
+### Account Information
+- No MoodFlow account is required.
+- Google Play Billing may process purchase status for premium features.
 
-By using MoodFlow, you agree to the collection and use of information in accordance with this policy.
+### Device Information
+- Mood entries, notes, coping strategies, activity logs, statistics, notification preferences, premium status, and optional Gemini API settings are stored locally.
 
----
+## How We Use Your Information
 
-## 2. Information We Collect
+### Location Sharing
+- MoodFlow does not use your location.
 
-### 2.1 Personal Content (Stored Locally Only)
+### Account Management
+- Track moods and generate local trends/statistics.
+- Provide optional AI insights when you request them.
+- Manage premium entitlement status through Google Play Billing.
 
-MoodFlow collects the following personal content, which is **stored exclusively on your device**:
+### Service Improvement
+- Improve mood tracking workflows and app reliability.
+- We do not sell, rent, or monetize your mood data.
 
-#### Mood Entries
-- **Emotion Type**: One of five emotions (Happy, Sad, Anxious, Calm, Angry)
-- **Intensity Level**: A value from 1 to 10
-- **Notes**: Optional text notes you write (up to 500 characters)
-- **Triggers**: Optional tags you select (Work, Relationships, Health, Sleep, Weather, Social, Other)
-- **Timestamp**: Date and time of each mood entry
+## Storage and Retention
 
-#### Coping Strategies Data
-- **Usage History**: Which coping strategies you've used
-- **Favorites**: Strategies you've marked as favorites
-- **Usage Frequency**: How often you use each strategy
-- **Effectiveness**: Your interaction with strategies
+### Data Storage
+- Mood data and preferences are stored locally using on-device storage such as Room/DataStore.
+- Optional AI insight requests may send selected or summarized mood data to Google Gemini.
+- Firebase may process diagnostics if enabled in the installed build.
 
-#### Activity Logs
-- **Daily Activity**: Whether you logged a mood entry each day
-- **Streak Information**: Current and longest streak counts
-- **Entry Counts**: Total number of mood entries
+### Data Retention
+- Local mood data remains until you delete it, clear app data, or uninstall the app.
+- Third-party services retain data according to their policies when you use optional network features.
 
-#### Statistics
-- **Aggregated Data**: Calculated statistics such as:
-  - Total entries
-  - Average intensity
-  - Most common emotion
-  - Days active
-  - Mood trends over time
+### Data Security
+- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- Local data remains on your device or browser unless a feature you use requires a named third-party service.
+- Network communication uses HTTPS/TLS where applicable.
+- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
-### 2.2 App Preferences (Stored Locally Only)
+## Data Sharing
 
-- **Theme Settings**: Light, Dark, or System Default theme preference
-- **Notification Preferences**: Reminder times and frequency settings
-- **Premium Status**: Whether you have an active premium subscription (stored locally)
-- **API Configuration**: Your Google Gemini API key (if you provide your own)
+### Family Groups
+- MoodFlow does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
+- You control feature use through the app settings, permissions, account controls, or platform settings.
 
-### 2.3 What We DON'T Collect
+### Third Parties
+- Google Gemini may receive selected or summarized mood data only when optional AI insights are used.
+- Google Play Billing processes purchase data.
+- Firebase may process diagnostics if enabled.
 
-We do **NOT** collect:
-- Personal identification information (name, email address, phone number)
-- Location data or GPS coordinates
-- Contact information from your device
-- Payment information (handled by Google Play)
-- Biometric data (fingerprints, face recognition)
-- Device identifiers for tracking purposes
-- Health records or medical information
-- Photos or images from your device
+We do **not** share your data with:
+- Data brokers
+- Unrelated advertising networks, unless advertising is explicitly listed above for this app
+- Third parties unrelated to the app features described in this policy
 
----
+## Permissions Used
 
-## 3. How We Use Your Information
+### Required Permissions
 
-### 3.1 Local Data Usage
+* **INTERNET**: Used for optional AI, billing, and Firebase services.
+* **POST_NOTIFICATIONS**: Used for mood check-in reminders.
 
-All data collected by MoodFlow is used **exclusively on your device** for:
+### Optional Permissions
 
-- **Mood Tracking**: Storing and displaying your mood entries
-- **Journal Functionality**: Creating calendar views and entry lists
-- **Statistics Calculation**: Generating insights and analytics
-- **Streak Tracking**: Calculating and displaying your consistency streaks
-- **Coping Strategy Recommendations**: Suggesting strategies based on your mood patterns
-- **App Customization**: Applying your theme and notification preferences
+* AI insights, notifications, and premium purchases are optional user-controlled features.
 
-### 3.2 AI Insights (Google Gemini API)
+## Your Rights and Controls
 
-When you use the AI Insights feature:
+### Location Sharing Control
+- No location sharing exists in MoodFlow.
 
-- **Data Sent**: Only aggregated, anonymized mood data:
-  - Emotion types (without personal notes)
-  - Intensity levels
-  - Dates (without specific timestamps)
-  - Trigger categories (without details)
-- **Data NOT Sent**:
-  - ❌ Your personal notes or journal text
-  - ❌ Personal information
-  - ❌ Device identifiers
-  - ❌ Specific trigger details
-- **Purpose**: Generate weekly pattern analysis and insights
-- **Privacy**: Your personal notes and journal entries remain completely private
+### Account Management
+- No app account is required; Google Play purchases are managed through your Google account.
 
-### 3.3 Premium Features
+### Data Access
+- You can view, edit, export, or delete local mood data in the app.
 
-- **Subscription Status**: Stored locally to enable/disable premium features
-- **Payment Processing**: Handled entirely by Google Play Billing
-- **No Payment Data**: We never receive or store your payment information
+### GDPR Rights (EU Users)
+If you are in the European Union, you have additional rights:
+- **Right to Access**: Request a copy of your personal data
+- **Right to Rectification**: Correct inaccurate data
+- **Right to Erasure**: Request deletion of your data
+- **Right to Restrict Processing**: Limit how we use your data
+- **Right to Data Portability**: Receive your data in a portable format
+- **Right to Object**: Object to certain types of processing
 
----
+To exercise these rights, contact us using the methods in the Contact Us section.
 
-## 4. Data Storage & Security
+### Permissions
+- You can revoke Android permissions in Android Settings -> Apps -> MoodFlow -> Permissions.
+- Browser permissions and storage can be managed in your browser site settings for web apps.
+- Revoking required permissions may prevent related features from functioning.
 
-### 4.1 Local Storage
+## Children's Privacy
 
-All your personal data is stored **locally on your device** using:
+- Our app is **not intended for children under 13**.
+- We do not knowingly collect data from children under 13.
+- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
+- Parents and guardians should supervise children's use of apps that store personal content.
 
-- **Room Database**: Encrypted local database for:
-  - Mood entries
-  - Coping strategies usage data
-  - Activity logs
-- **DataStore**: Secure local storage for:
-  - App preferences
-  - Theme settings
-  - Notification preferences
-- **EncryptedSharedPreferences**: For sensitive data like premium status
-- **FileProvider**: Secure file sharing for exported data and PDF reports
+## Security
 
-### 4.2 Security Measures
+- Local data is protected by Android, browser, or operating-system app sandboxing.
+- Network communication uses HTTPS/TLS where applicable.
+- Third-party services named in this policy provide their own security controls and privacy policies.
+- You are responsible for protecting your device, browser profile, and account credentials.
+- We do not sell your personal data.
 
-We implement the following security measures:
+## Changes to This Policy
 
-- ✅ **Encryption**: All local data is encrypted using Android's built-in encryption
-- ✅ **No Network Transmission**: Your mood entries and notes are never transmitted over the network
-- ✅ **Secure API Keys**: API keys stored securely using DataStore
-- ✅ **FileProvider**: Secure file sharing mechanism for exported files
-- ✅ **HTTPS Only**: All network communication uses HTTPS
-- ✅ **No Cloud Storage**: Your data never leaves your device
-- ✅ **Regular Updates**: Security patches and updates applied regularly
+We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
+- Noted in the app release notes or repository when applicable
+- Reflected with a new "Last updated" date
+- Communicated in the app or project page if the change is significant
 
-### 4.3 Data Retention
+The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
 
-- **Mood Entries**: Retained on your device until you manually delete them
-- **Coping Strategies**: Pre-populated strategies remain; your usage data is retained locally
-- **Activity Logs**: Retained for streak calculation and statistics
-- **Exported Files**: Stored in your device's Downloads folder (you control these files)
-- **Uninstall**: All app data is automatically deleted when you uninstall the app
+## Contact Us
 
----
+If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
 
-## 5. Data Sharing
+* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/moodflow-privacy-policy
+* **Email:** sunny.sudarshan@gmail.com
+* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/MoodFlow
 
-### 5.1 We Do NOT Share Your Data
+We will respond as quickly as possible, typically within 48 hours.
 
-**MoodFlow does NOT:**
-- Share your data with third parties
-- Sell your data to advertisers or data brokers
-- Use your data for marketing purposes
-- Share your data with other apps
-- Upload your data to cloud servers
+## Data Deletion
 
-### 5.2 Third-Party Services
+### How to Delete Your Account:
+This app does not require an account. You can delete local app data using the options below:
 
-#### Google Gemini API
-- **Purpose**: Generate AI-powered mood insights
-- **Data Shared**: Only aggregated, anonymized mood statistics (no personal notes)
-- **Privacy Policy**: [Google Privacy Policy](https://policies.google.com/privacy)
+#### Option 1: In-App Deletion
+1. Open MoodFlow
+2. Delete individual entries, reminders, history, or settings where the app provides controls
+3. Or use Android/browser settings to clear app/site data
+4. Uninstalling the app also removes local app-private data
 
-#### Google Play Billing
-- **Purpose**: Process premium subscription purchases
-- **Data Shared**: Handled entirely by Google Play Services
-- **Privacy Policy**: [Google Play Privacy Policy](https://policies.google.com/privacy)
+#### Option 2: Email Deletion Request
+Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
+- Subject: "Data Deletion Request - MoodFlow"
+- Include: The email/account identifier used in the app, if any
+- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
 
-#### Google Play Services (Optional)
-- **Purpose**: Analytics and crash reporting (if enabled)
-- **Data Shared**: Aggregated, anonymized usage statistics only
-- **No Personal Data**: No personally identifiable information is shared
+#### Option 3: Web Deletion
+1. Visit the privacy policy website for contact and support information
+2. For browser apps, clear browser storage for the site
+3. For Android apps, clear storage from Android Settings if you want a full local reset
 
----
+### What Gets Deleted:
+- Local app data stored by the app
+- Local preferences and reminder/history records
+- Cached data controlled by the app or browser
+- Exported/shared files only if you delete them from where you saved them
 
-## 6. Your Rights and Controls
+### Data Retention After Deletion:
+- **Immediate:** clearing app/site data removes local app-private data from your device/browser
+- **Uninstall:** removes app-private local data from Android apps
+- **Exports/shared files:** remain wherever you saved or sent them until you delete them
 
-### 6.1 Data Access
+To request deletion of your data:
 
-You can access all your data directly in the app:
-- View all mood entries in the Journal screen
-- View statistics in the Profile screen
-- View insights in the Insights screen
-- View coping strategies in the Resources screen
+1. Open MoodFlow, if installed
+2. Delete local content or clear app/site data where applicable
+3. Contact support via email: sunny.sudarshan@gmail.com
+4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
+5. We will confirm what data can be deleted and complete the request according to the retention terms above
 
-### 6.2 Data Modification
+## Firebase and Google Services
 
-You have full control to:
-- **Edit Entries**: Modify mood entries (emotion, intensity, notes, triggers)
-- **Delete Entries**: Delete individual mood entries or all entries
-- **Update Preferences**: Change theme, notifications, and other settings
-- **Manage Strategies**: Mark/unmark favorites, track usage
+This app may use the following services depending on the features you enable and the installed version:
 
-### 6.3 Data Export
+- Google Gemini API for optional AI insights
+- Google Play Billing
+- Firebase services if enabled in the build
 
-You can export your data at any time:
-- **JSON Export**: Export all mood entries to a JSON file
-- **PDF Export**: Generate detailed mood reports in PDF format (Premium feature)
-- **Location**: Exported files are saved to your device's Downloads folder
-- **Control**: You can share, move, or delete exported files as you wish
+Please review relevant third-party privacy policies:
 
-### 6.4 Data Deletion
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
+- [Google Play Terms](https://play.google.com/about/play-terms/)
+- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
 
-You can delete your data:
-- **Individual Entries**: Delete specific mood entries from the Journal screen
-- **All Data**: Clear all data from Settings → Clear All Data
-- **Uninstall**: Uninstalling the app removes all local data
+## About MoodFlow
+
+MoodFlow is built with privacy in mind. The app is built with:
+- Kotlin and Jetpack Compose
+- Room/DataStore for local mood data
+- Google Gemini for optional AI insights
+- Google Play Billing for premium features
+
+The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
 
 ---
 
-## 7. Children's Privacy
-
-MoodFlow is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
-
-If we discover that we have collected information from a child under 13, we will delete that information promptly.
+**Last Updated:** May 17, 2026
 
 ---
 
-## 8. Permissions Explained
+## Recent Updates (Version 1.1.0 - May 17, 2026)
 
-### 8.1 Required Permissions
-
-#### INTERNET
-- **Purpose**: Connect to Google Gemini API for AI insights
-- **When Used**: Only when you request AI insights
-- **Privacy**: App works fully offline for mood tracking without this permission
-
-#### POST_NOTIFICATIONS
-- **Purpose**: Send daily mood check-in reminder notifications
-- **When Used**: Based on your notification preferences
-- **Control**: You can disable notifications anytime in Settings
-
-### 8.2 Optional Permissions
-
-MoodFlow does not require any other permissions. All core features work without additional permissions.
-
----
-
-## 9. GDPR Rights (European Users)
-
-If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):
-
-### 9.1 Right to Access
-You have the right to access all personal data we hold about you. You can view all your data directly in the app.
-
-### 9.2 Right to Rectification
-You have the right to correct inaccurate or incomplete data. You can edit mood entries directly in the app.
-
-### 9.3 Right to Erasure
-You have the right to request deletion of your data. You can delete entries or all data using the app's built-in features.
-
-### 9.4 Right to Data Portability
-You have the right to receive your data in a portable format. Use the Export feature to export your data to JSON or PDF.
-
-### 9.5 Right to Object
-You have the right to object to processing of your data. You can disable features that process your data (e.g., AI insights).
-
-### 9.6 Right to Restrict Processing
-You have the right to restrict how we process your data. Since all processing is local, you can simply stop using features.
-
-### 9.7 Right to Withdraw Consent
-You can withdraw consent at any time by deleting the app or clearing all data.
-
-**To Exercise Your Rights**: Use the app's built-in features or contact us at sudarshantechlabs@gmail.com
-
----
-
-## 10. CCPA Rights (California Users)
-
-If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):
-
-- **Right to Know**: You can request information about what personal information we collect
-- **Right to Delete**: You can request deletion of your personal information
-- **Right to Opt-Out**: You can opt-out of the sale of personal information (we don't sell data)
-- **Right to Non-Discrimination**: We will not discriminate against you for exercising your rights
-
-**To Exercise Your Rights**: Contact us at sudarshantechlabs@gmail.com
-
----
-
-## 11. International Data Transfers
-
-Since all your data is stored locally on your device, there are no international data transfers. Your data never leaves your device unless you explicitly export it.
-
----
-
-## 12. Data Breach Notification
-
-In the unlikely event of a data breach affecting your personal information, we will:
-- Notify you within 72 hours of becoming aware of the breach
-- Provide details about what data was affected
-- Explain steps we're taking to address the breach
-- Offer guidance on steps you can take to protect yourself
-
----
-
-## 13. Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time. We will notify you of any changes by:
-- Updating the "Last Updated" date at the top of this policy
-- Posting the new Privacy Policy in the app (if applicable)
-- Notifying you through app updates for significant changes
-
-Your continued use of MoodFlow after any changes constitutes acceptance of the updated Privacy Policy.
-
----
-
-## 14. Contact Information
-
-If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
-
-**Sudarshan Tech Labs**
-- **Email**: sudarshantechlabs@gmail.com
-- **Developer Email**: sunny.sudarshan@gmail.com
-- **Website**: https://sudarshantechlabs.com
-- **GitHub**: [MoodFlow Repository](https://github.com/SUDARSHANCHAUDHARI/MoodFlow)
-
-**Response Time**: We aim to respond to privacy-related inquiries within 48 hours.
-
----
-
-## 15. Legal Basis for Processing (GDPR)
-
-For users in the EEA, our legal basis for processing your personal data is:
-- **Consent**: You provide consent by using the app and its features
-- **Legitimate Interest**: Processing is necessary for app functionality
-- **Contract Performance**: Processing is necessary to provide app services
-
-You can withdraw consent at any time by deleting the app or clearing all data.
-
----
-
-## 16. Data Protection Officer
-
-For privacy-related inquiries, please contact:
-- **Email**: sudarshantechlabs@gmail.com
-- **Subject**: "Privacy Inquiry - MoodFlow"
-
----
-
-## 17. Supervisory Authority
-
-If you are in the EEA and believe we have not addressed your privacy concerns, you have the right to file a complaint with your local data protection authority.
-
----
-
-## 18. Consent
-
-By using MoodFlow, you consent to:
-- The collection and use of information as described in this Privacy Policy
-- Local storage of your data on your device
-- Optional use of Google Gemini API for AI insights (with aggregated data only)
-
-You can withdraw consent at any time by:
-- Disabling AI insights in Settings
-- Clearing all app data
-- Uninstalling the app
-
----
-
-## 19. Summary
-
-**Key Points:**
-- ✅ All your data is stored locally on your device
-- ✅ Your personal notes are never sent to any server
-- ✅ We don't share your data with third parties
-- ✅ You have full control over your data
-- ✅ You can export or delete your data anytime
-- ✅ The app works offline for mood tracking
-
-**Your Privacy Matters**: We are committed to protecting your privacy and ensuring your personal mood data remains secure and private.
-
----
-
-**Last Updated**: January 13, 2025
-
-**Version**: 1.0
-
----
-
-*This Privacy Policy is effective as of the date listed above and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted in the app or on this page.*
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified local mood data, optional AI insights, notifications, billing, and Firebase diagnostics.**
