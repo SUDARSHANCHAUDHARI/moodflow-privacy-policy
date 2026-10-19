@@ -25,8 +25,8 @@
     <article>
       <h1>MoodFlow Privacy Policy</h1>
       <p><strong>Effective Date:</strong> May 17, 2026</p>
-      <p><em>Last updated: May 17, 2026</em></p>
-      <p><strong>Version:</strong> 1.1.0</p>
+      <p><em>Last updated: October 19, 2026</em></p>
+      <p><strong>Version:</strong> 1.2.0</p>
       <p>MoodFlow (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.</p>
       <h2>Information We Collect</h2>
       <h3>Location Data</h3>
@@ -62,7 +62,7 @@
       <h3>Data Storage</h3>
       <ul>
       <li>Mood data and preferences are stored locally using on-device storage such as Room/DataStore.</li>
-      <li>Optional AI insight requests may send selected or summarized mood data to Google Gemini.</li>
+      <li>When you tap to load AI Insights (a premium feature), MoodFlow sends your mood entries from the past 7 days to the Google Gemini API over HTTPS. For each entry it sends the date, the emotion, the intensity (1-10), the first 100 characters of your note, and your trigger tags. Nothing is sent until you request AI insights, and at least 3 entries from the past 7 days are needed.</li>
       <li>Firebase may process diagnostics if enabled in the installed build.</li>
       </ul>
       <h3>Data Retention</h3>
@@ -86,7 +86,7 @@
       </ul>
       <h3>Third Parties</h3>
       <ul>
-      <li>Google Gemini may receive selected or summarized mood data only when optional AI insights are used.</li>
+      <li>Google Gemini receives, only when you request AI insights, your mood entries from the past 7 days: date, emotion, intensity, the first 100 characters of each note, and trigger tags.</li>
       <li>Google Play Billing processes purchase data.</li>
       <li>Firebase may process diagnostics if enabled.</li>
       </ul>
@@ -223,6 +223,7 @@
       <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
       <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
       <li><a href="https://play.google.com/about/play-terms/">Google Play Terms</a></li>
+      <li><a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a></li>
       <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a></li>
       </ul>
       <h2>About MoodFlow</h2>
@@ -235,8 +236,13 @@
       </ul>
       <p>The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.</p>
       <hr>
-      <p><strong>Last Updated:</strong> May 17, 2026</p>
+      <p><strong>Last Updated:</strong> October 19, 2026</p>
       <hr>
+      <h2>Recent Updates (Version 1.2.0 - October 19, 2026)</h2>
+      <ul>
+      <li><strong>Corrected the Google Gemini disclosure: AI insights send the date, emotion, intensity, first 100 characters of each note, and trigger tags for the past 7 days.</strong></li>
+      <li><strong>Added a link to the Gemini API Additional Terms of Service.</strong></li>
+      </ul>
       <h2>Recent Updates (Version 1.1.0 - May 17, 2026)</h2>
       <ul>
       <li><strong>Aligned policy with the shared privacy-policy structure.</strong></li>
