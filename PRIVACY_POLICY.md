@@ -1,8 +1,8 @@
 # MoodFlow Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: October 19, 2026_
-**Version:** 1.2.0
+_Last updated: November 2, 2026_
+**Version:** 1.3.0
 
 MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.
 
@@ -59,7 +59,9 @@ MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking a
 ### Third Parties
 - Google Gemini receives, only when you request AI insights, your mood entries from the past 7 days: date, emotion, intensity, the first 100 characters of each note, and trigger tags.
 - Google Play Billing processes purchase data.
-- Firebase may process diagnostics if enabled.
+- **Firebase Crashlytics (Google)**: If the app crashes, a crash report is sent to Firebase Crashlytics. It can include the error details, device model, Android version, app version, and an installation identifier. No mood entries, notes, or trigger tags are included. We use it only to find and fix bugs.
+- **Firebase Analytics (Google)**: Aggregated usage events (which screens are opened and which features are used) together with device model, Android version, and app version. No mood entry content is sent. We use it only to see which features are worth keeping.
+- Google's handling of both is covered by the [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
 
 We do **not** share your data with:
 - Data brokers
