@@ -1,8 +1,8 @@
 # MoodFlow Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: November 2, 2026_
-**Version:** 1.3.0
+_Last updated: November 8, 2026_
+**Version:** 1.4.0
 
 MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.
 
@@ -44,7 +44,9 @@ MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking a
 - Third-party services retain data according to their policies when you use optional network features.
 
 ### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- On your device, your mood entries and notes sit in the App's private storage, protected by Android's application sandbox.
+- In transit, the three Google services named in this policy — Firebase Analytics, Firebase Crashlytics, and the Gemini API when you have supplied a key — are reached over HTTPS and protected by those services' own controls. Google's handling of what they receive is governed by Google's terms, not ours.
+- No Sudarshan Tech Labs server exists, so there is no third location holding your data.
 - Local data remains on your device or browser unless a feature you use requires a named third-party service.
 - Network communication uses HTTPS/TLS where applicable.
 - You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
@@ -72,8 +74,19 @@ We do **not** share your data with:
 
 ### Required Permissions
 
-* **INTERNET**: Used for optional AI, billing, and Firebase services.
+* **INTERNET**: Used for Firebase Analytics and Crashlytics, Google Play Billing, and — only if you have supplied your own API key — the Gemini request described above.
 * **POST_NOTIFICATIONS**: Used for mood check-in reminders.
+
+### Permissions added by Android libraries
+
+The App declares the two above. The finished build carries eight more, declared by the libraries it is built on rather than by MoodFlow's own code. They appear in the permission list you see on the Play Store, so they are listed here for completeness:
+
+* **ACCESS_ADSERVICES_AD_ID and ACCESS_ADSERVICES_ATTRIBUTION**: Android's Privacy Sandbox advertising APIs, declared by the Firebase Analytics library. **MoodFlow shows no advertising and contains no advertising SDK.** These names appearing in a mood tracker's permission list would reasonably alarm anyone reading the list, so to be explicit: they arrive with Analytics and are not used to show you ads.
+* **ACCESS_NETWORK_STATE**: Declared by Firebase. Lets a library check whether a network exists before attempting to send; it grants no ability to use one.
+* **WAKE_LOCK, FOREGROUND_SERVICE, BIND_JOB_SERVICE and RECEIVE_BOOT_COMPLETED**: Declared by WorkManager, which runs and re-registers your scheduled mood reminders.
+* **DUMP**: Declared by a build-time library. Android grants it only to system apps, so it has no effect here.
+
+Verified against the merged manifest of the release build rather than the App's own manifest file.
 
 ### Optional Permissions
 
@@ -212,6 +225,17 @@ The app collects only the data needed for the features described in this policy,
 **Last Updated:** October 19, 2026
 
 ---
+
+## Recent Updates (Version 1.4.0 - November 8, 2026)
+
+- **Replaced a boilerplate security sentence** that claimed data was protected by "Android, the browser, Firebase, Google, GitHub, or other services". MoodFlow uses no browser and no GitHub service. The section now says where data actually sits, on the device and in transit to the three named Google services.
+- **Listed the permissions Android libraries merge in.** The App declares two; the finished build carries ten. `ACCESS_ADSERVICES_AD_ID` and `ACCESS_ADSERVICES_ATTRIBUTION` arrive with Firebase Analytics, and the entry states plainly that MoodFlow shows no advertising and has no advertising SDK, because those two names in a mood tracker's permission list would reasonably alarm a reader.
+- **Tied `INTERNET` to its three actual uses** rather than "optional AI, billing, and Firebase services".
+
+## Recent Updates (Version 1.3.0 - November 2, 2026)
+
+- **Named Firebase Crashlytics and Firebase Analytics** in place of the word "diagnostics", and set out what each receives.
+- **Disclosed exactly what the Gemini feature sends:** for each mood entry from the past seven days, the date, the emotion, the intensity out of ten, the first 100 characters of your note, and your trigger tags. This entry is recorded late — the change shipped under version 1.3.0 without a changelog note.
 
 ## Recent Updates (Version 1.2.0 - October 19, 2026)
 

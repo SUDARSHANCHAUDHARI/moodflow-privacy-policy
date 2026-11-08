@@ -18,16 +18,19 @@
     hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
     strong { font-weight: 700; }
     @media (max-width: 640px) { article { padding: 20px; } main { padding: 20px 12px 48px; } }
+      table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--bg); font-weight: 700; }
+    code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 0.9em; }
+    @media (max-width: 640px) { table, th, td { font-size: 0.85rem; } th, td { padding: 6px 7px; } }
   </style>
 </head>
 <body>
   <main>
     <article>
       <h1>MoodFlow Privacy Policy</h1>
-      <p><strong>Effective Date:</strong> May 17, 2026</p>
-      <p><em>Last updated: November 2, 2026</em></p>
-      <p><strong>Version:</strong> 1.3.0</p>
-      <p>MoodFlow (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.</p>
+      <p><strong>Effective Date:</strong> May 17, 2026 _Last updated: November 8, 2026_ <strong>Version:</strong> 1.4.0</p>
+      <p>MoodFlow ("we," "our," or "us") is an Android app. MoodFlow is a mood tracking app for Android with local mood logs, coping strategies, insights, premium features, and optional Gemini AI support. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.</p>
       <h2>Information We Collect</h2>
       <h3>Location Data</h3>
       <ul>
@@ -72,7 +75,9 @@
       </ul>
       <h3>Data Security</h3>
       <ul>
-      <li>Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.</li>
+      <li>On your device, your mood entries and notes sit in the App's private storage, protected by Android's application sandbox.</li>
+      <li>In transit, the three Google services named in this policy — Firebase Analytics, Firebase Crashlytics, and the Gemini API when you have supplied a key — are reached over HTTPS and protected by those services' own controls. Google's handling of what they receive is governed by Google's terms, not ours.</li>
+      <li>No Sudarshan Tech Labs server exists, so there is no third location holding your data.</li>
       <li>Local data remains on your device or browser unless a feature you use requires a named third-party service.</li>
       <li>Network communication uses HTTPS/TLS where applicable.</li>
       <li>You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.</li>
@@ -90,7 +95,7 @@
       <li>Google Play Billing processes purchase data.</li>
       <li><strong>Firebase Crashlytics (Google)</strong>: If the app crashes, a crash report is sent to Firebase Crashlytics. It can include the error details, device model, Android version, app version, and an installation identifier. No mood entries, notes, or trigger tags are included. We use it only to find and fix bugs.</li>
       <li><strong>Firebase Analytics (Google)</strong>: Aggregated usage events (which screens are opened and which features are used) together with device model, Android version, and app version. No mood entry content is sent. We use it only to see which features are worth keeping.</li>
-      <li>Google&#39;s handling of both is covered by the <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</li>
+      <li>Google's handling of both is covered by the <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</li>
       </ul>
       <p>We do <strong>not</strong> share your data with:</p>
       <ul>
@@ -101,9 +106,18 @@
       <h2>Permissions Used</h2>
       <h3>Required Permissions</h3>
       <ul>
-      <li><strong>INTERNET</strong>: Used for optional AI, billing, and Firebase services.</li>
+      <li><strong>INTERNET</strong>: Used for Firebase Analytics and Crashlytics, Google Play Billing, and — only if you have supplied your own API key — the Gemini request described above.</li>
       <li><strong>POST_NOTIFICATIONS</strong>: Used for mood check-in reminders.</li>
       </ul>
+      <h3>Permissions added by Android libraries</h3>
+      <p>The App declares the two above. The finished build carries eight more, declared by the libraries it is built on rather than by MoodFlow's own code. They appear in the permission list you see on the Play Store, so they are listed here for completeness:</p>
+      <ul>
+      <li><strong>ACCESS_ADSERVICES_AD_ID and ACCESS_ADSERVICES_ATTRIBUTION</strong>: Android's Privacy Sandbox advertising APIs, declared by the Firebase Analytics library. <strong>MoodFlow shows no advertising and contains no advertising SDK.</strong> These names appearing in a mood tracker's permission list would reasonably alarm anyone reading the list, so to be explicit: they arrive with Analytics and are not used to show you ads.</li>
+      <li><strong>ACCESS_NETWORK_STATE</strong>: Declared by Firebase. Lets a library check whether a network exists before attempting to send; it grants no ability to use one.</li>
+      <li><strong>WAKE_LOCK, FOREGROUND_SERVICE, BIND_JOB_SERVICE and RECEIVE_BOOT_COMPLETED</strong>: Declared by WorkManager, which runs and re-registers your scheduled mood reminders.</li>
+      <li><strong>DUMP</strong>: Declared by a build-time library. Android grants it only to system apps, so it has no effect here.</li>
+      </ul>
+      <p>Verified against the merged manifest of the release build rather than the App's own manifest file.</p>
       <h3>Optional Permissions</h3>
       <ul>
       <li>AI insights, notifications, and premium purchases are optional user-controlled features.</li>
@@ -138,12 +152,12 @@
       <li>Browser permissions and storage can be managed in your browser site settings for web apps.</li>
       <li>Revoking required permissions may prevent related features from functioning.</li>
       </ul>
-      <h2>Children&#39;s Privacy</h2>
+      <h2>Children's Privacy</h2>
       <ul>
       <li>Our app is <strong>not intended for children under 13</strong>.</li>
       <li>We do not knowingly collect data from children under 13.</li>
       <li>If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.</li>
-      <li>Parents and guardians should supervise children&#39;s use of apps that store personal content.</li>
+      <li>Parents and guardians should supervise children's use of apps that store personal content.</li>
       </ul>
       <h2>Security</h2>
       <ul>
@@ -157,62 +171,47 @@
       <p>We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:</p>
       <ul>
       <li>Noted in the app release notes or repository when applicable</li>
-      <li>Reflected with a new &quot;Last updated&quot; date</li>
+      <li>Reflected with a new "Last updated" date</li>
       <li>Communicated in the app or project page if the change is significant</li>
       </ul>
-      <p>The &quot;Last updated&quot; date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      <p>The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
       <h2>Contact Us</h2>
       <p>If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:</p>
       <ul>
-      <li><strong>GitHub Repository:</strong> https://github.com/SUDARSHANCHAUDHARI/moodflow-privacy-policy</li>
+      <li><strong>GitHub Repository:</strong> <a href="https://github.com/SUDARSHANCHAUDHARI/moodflow-privacy-policy">https://github.com/SUDARSHANCHAUDHARI/moodflow-privacy-policy</a></li>
       <li><strong>Email:</strong> sunny.sudarshan@gmail.com</li>
-      <li><strong>Main App Repository:</strong> https://github.com/SUDARSHANCHAUDHARI/MoodFlow</li>
+      <li><strong>Main App Repository:</strong> <a href="https://github.com/SUDARSHANCHAUDHARI/MoodFlow">https://github.com/SUDARSHANCHAUDHARI/MoodFlow</a></li>
       </ul>
       <p>We will respond as quickly as possible, typically within 48 hours.</p>
       <h2>Data Deletion</h2>
-      <h3>How to Delete Your Account</h3>
+      <h3>How to Delete Your Account:</h3>
       <p>This app does not require an account. You can delete local app data using the options below:</p>
       <h4>Option 1: In-App Deletion</h4>
-      <ol>
-      <li>Open MoodFlow</li>
-      <li>Delete individual entries, reminders, history, or settings where the app provides controls</li>
-      <li>Or use Android/browser settings to clear app/site data</li>
-      <li>Uninstalling the app also removes local app-private data</li>
-      </ol>
+      <p>1. Open MoodFlow 2. Delete individual entries, reminders, history, or settings where the app provides controls 3. Or use Android/browser settings to clear app/site data 4. Uninstalling the app also removes local app-private data</p>
       <h4>Option 2: Email Deletion Request</h4>
       <p>Send an email to: <strong>support@sudarshantechlabs.com</strong> or <strong>sunny.sudarshan@gmail.com</strong></p>
       <ul>
-      <li>Subject: &quot;Data Deletion Request - MoodFlow&quot;</li>
+      <li>Subject: "Data Deletion Request - MoodFlow"</li>
       <li>Include: The email/account identifier used in the app, if any</li>
       <li>We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement</li>
       </ul>
       <h4>Option 3: Web Deletion</h4>
-      <ol>
-      <li>Visit the privacy policy website for contact and support information</li>
-      <li>For browser apps, clear browser storage for the site</li>
-      <li>For Android apps, clear storage from Android Settings if you want a full local reset</li>
-      </ol>
-      <h3>What Gets Deleted</h3>
+      <p>1. Visit the privacy policy website for contact and support information 2. For browser apps, clear browser storage for the site 3. For Android apps, clear storage from Android Settings if you want a full local reset</p>
+      <h3>What Gets Deleted:</h3>
       <ul>
       <li>Local app data stored by the app</li>
       <li>Local preferences and reminder/history records</li>
       <li>Cached data controlled by the app or browser</li>
       <li>Exported/shared files only if you delete them from where you saved them</li>
       </ul>
-      <h3>Data Retention After Deletion</h3>
+      <h3>Data Retention After Deletion:</h3>
       <ul>
       <li><strong>Immediate:</strong> clearing app/site data removes local app-private data from your device/browser</li>
       <li><strong>Uninstall:</strong> removes app-private local data from Android apps</li>
       <li><strong>Exports/shared files:</strong> remain wherever you saved or sent them until you delete them</li>
       </ul>
       <p>To request deletion of your data:</p>
-      <ol>
-      <li>Open MoodFlow, if installed</li>
-      <li>Delete local content or clear app/site data where applicable</li>
-      <li>Contact support via email: sunny.sudarshan@gmail.com</li>
-      <li>Request account/data deletion and include enough detail for us to identify the app and any account, if one exists</li>
-      <li>We will confirm what data can be deleted and complete the request according to the retention terms above</li>
-      </ol>
+      <p>1. Open MoodFlow, if installed 2. Delete local content or clear app/site data where applicable 3. Contact support via email: sunny.sudarshan@gmail.com 4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists 5. We will confirm what data can be deleted and complete the request according to the retention terms above</p>
       <h2>Firebase and Google Services</h2>
       <p>This app may use the following services depending on the features you enable and the installed version:</p>
       <ul>
@@ -240,6 +239,17 @@
       <hr>
       <p><strong>Last Updated:</strong> October 19, 2026</p>
       <hr>
+      <h2>Recent Updates (Version 1.4.0 - November 8, 2026)</h2>
+      <ul>
+      <li><strong>Replaced a boilerplate security sentence</strong> that claimed data was protected by "Android, the browser, Firebase, Google, GitHub, or other services". MoodFlow uses no browser and no GitHub service. The section now says where data actually sits, on the device and in transit to the three named Google services.</li>
+      <li><strong>Listed the permissions Android libraries merge in.</strong> The App declares two; the finished build carries ten. <code>ACCESS_ADSERVICES_AD_ID</code> and <code>ACCESS_ADSERVICES_ATTRIBUTION</code> arrive with Firebase Analytics, and the entry states plainly that MoodFlow shows no advertising and has no advertising SDK, because those two names in a mood tracker's permission list would reasonably alarm a reader.</li>
+      <li><strong>Tied <code>INTERNET</code> to its three actual uses</strong> rather than "optional AI, billing, and Firebase services".</li>
+      </ul>
+      <h2>Recent Updates (Version 1.3.0 - November 2, 2026)</h2>
+      <ul>
+      <li><strong>Named Firebase Crashlytics and Firebase Analytics</strong> in place of the word "diagnostics", and set out what each receives.</li>
+      <li><strong>Disclosed exactly what the Gemini feature sends:</strong> for each mood entry from the past seven days, the date, the emotion, the intensity out of ten, the first 100 characters of your note, and your trigger tags. This entry is recorded late — the change shipped under version 1.3.0 without a changelog note.</li>
+      </ul>
       <h2>Recent Updates (Version 1.2.0 - October 19, 2026)</h2>
       <ul>
       <li><strong>Corrected the Google Gemini disclosure: AI insights send the date, emotion, intensity, first 100 characters of each note, and trigger tags for the past 7 days.</strong></li>
@@ -250,7 +260,6 @@
       <li><strong>Aligned policy with the shared privacy-policy structure.</strong></li>
       <li><strong>Clarified local mood data, optional AI insights, notifications, billing, and Firebase diagnostics.</strong></li>
       </ul>
-
     </article>
   </main>
 </body>
